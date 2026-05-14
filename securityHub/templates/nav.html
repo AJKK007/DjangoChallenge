@@ -1,0 +1,48 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+<img src="{% static 'svgs/security.svg' %}" width="28" height="28" alt="" srcset="">
+    <a class="navbar-brand" href="{% url 'first-home' %}">
+      <span class="fw-bold">Security<span class="text-primary">Hub</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'first-home' %}">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'first-about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'first-how-it-works' %}">How it Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'first-contact' %}">Contact</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More Info
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'second-dashboard' %}">Dashboard</a></li>
+            <li><a class="dropdown-item" href="{% url 'second-report-incident' %}">Report Incident</a></li>
+            <li><a class="dropdown-item" href="{% url 'second-my-reports' %}">My Reports</a></li>
+            <li><a class="dropdown-item" href="{% url 'second-all-incidents' %}">All Incidents</a></li>
+            <li><a class="dropdown-item" href="{% url 'second-profile' %}">Profile</a></li>
+            <li><a class="dropdown-item" href="{% url 'second-logout' %}">Logout</a></li>
+          </ul>
+        </li>
+        <div class=" d-flex align-items-center gap-2 ">
+          <button class="px-3  py-1 text-primary border-0 rounded-3">Login</button>
+          <button class="px-3  py-1 bg-primary text-light rounded-3 border-0">Register</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>

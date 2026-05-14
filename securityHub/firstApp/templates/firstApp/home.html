@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="d-flex align-items-center ">
+
+
+<div class="d-flex flex-column ">
+
+<h1 class="display-5 fw-medium">Together for a <span class="text-primary">Safer</span> Community</h1>
+<p class="lead">Report incidents, stay informed and help keep our community safe.</p>
+
+<div class="d-flex gap-3">
+<button class="px-4 py-2 bg-primary text-white border-0 rounded-3">Login</button>
+<button class="px-4 py-2 bg-light text-primary border- border-primary rounded-3">Register</button>
+</div>
+
+</div>
+
+<img src="{% static 'images/pexels-manuel-moore-2156721042-34345219.jpg' %}" width="700" height="500" alt="" srcset="">
+
+
+</div>
+{% endblock %}
